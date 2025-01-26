@@ -1,0 +1,36 @@
+.wedsite-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    line-height: 50px;
+    width: 370px;
+    text-align: left;
+    color: crimson;
+    margin-bottom: 50;
+    
+
+}
+img{
+    border: 5px solid #555;
+}
+.body-work{
+    font-family: 'Times New Roman', Times, serif;
+    width: 500px;
+    line-height: 110%;
+}
+.vivi{
+    font-family: 'Courier New', Courier, monospace:'Courier New', Courier, monospace;
+    background-color:red;
+    width: 950px;
+    margin-top: 100px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.mimi{
+    
+}
+.mimi:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
