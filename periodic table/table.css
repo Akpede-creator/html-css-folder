@@ -1,14 +1,30 @@
 body{
-  background-color: lightskyblue;
+  background-color: black;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-    color: aliceblue;
-    
+  color: aliceblue;
+  flex-wrap: nowrap; 
 }
-div{
+:root {
+    --main-element-width: 60px;
+    --main-element-height: 60px;
+    --dark-green: #002200;
+    --dark-pink: #660044;
+    --dark-blue: #004488;
+    --light-pink: #dd22aa;
+    --red: #880000;
+    --brown: #884400;
+    --light-blue: #226688;
+    --lemon-green: #44aa00;}
+/*styles for box container  */
     
-    
+.box{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    position: relative;
 }
+/* end of styles for box container */
 
 .tablenumber{
     width: 60px;
@@ -19,25 +35,19 @@ div{
     align-items: center;
     border-radius: 8px;
 }
-    
-.box{
-    display: flex;
-    justify-content: center;
-    gap:20px;
-    
-    
-}
+/*hover styles for boxes*/
 .tablenumber:hover{
     opacity: 0.3;
     cursor: pointer;
+
+    
 }
 .boxcolumn{
     display: flex;
     flex-direction: column;
     gap:20px;
-    position: absolute;
-    top: 100px;
-    
+    position: relative;
+    margin-top: 20px;
 }
 .column{
     width: 60px;
@@ -52,52 +62,563 @@ div{
 .column:hover{
     opacity: 0.3;
     cursor: pointer;}
-
-.hydro{
+span{
+    font-size: 0.7em;
     position: absolute;
-    bottom: 535px;
-    right:1377px;
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    display: inline-block;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 8px; 
+    top: 2px;
+    left: 4px;
+    background-color: inherit;
 }
-
-.hel{
+#H{
+    
     position: absolute;
-    bottom: 535px;
-    right:18px;
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 8px;
-    align-items: center;
+    left: 80px;
+    background-color: #002200;
+}
+#Li{
+   
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    background-color: #660044;
+}
+#Na{
+   
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    background-color: #660044;
+}
+#K{
+   
+    position: absolute;
+    left: 80px;
+    top: 240px;
+    background-color: #660044;
+}
+#Rb{
+   
+    position: absolute;
+    left: 80px;
+    top: 320px;
+    background-color: #660044;
+}
+#Cs{
+    
+    position: absolute;
+    left: 80px;
+    top: 400px;
+    background-color: #660044;
+}
+#Fr{
+    
+    position: absolute;
+    left: 80px;
+    top: 480px;
+    background-color: #660044;
+}
+#Be{
+   
+    position: absolute;
+    left: 160px;
+    top: 80px;
+    background-color: #004488;
+}
+#Mg{
+    
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    background-color: #004488;
+}
+#Ca{
+    
+    position: absolute;
+    left: 160px;
+    top: 240px;
+    background-color: #004488;
+}
+#Sr{
+    
+    position: absolute;
+    left: 160px;
+    top: 320px;
+    background-color: #004488;
+}
+#Ba{
+   
+    position: absolute;
+    left: 160px;
+    top: 400px;
+    background-color: #004488;
+}
+#Ra{
+    
+    position: absolute;
+    left: 160px;
+    top: 480px;
+    background-color: #004488;
+}
+#Sc{
+    position: absolute;
+    left: 240px;
+    top: 240px;
+    background-color: #880000;
+}
+#Y{
+    position: absolute;
+    left: 240px;
+    top: 320px;
+    background-color: #880000;
+}
+#asterisk{
+    position: absolute;
+    left: 240px;
+    top: 400px;
+}
+#two-asterisk{
+    position: absolute;
+    left: 240px;
+    top: 480px;
+}
+#Ti{
+    position: absolute;
+    left: 320px;
+    top: 240px;
+    background-color: #880000;
+}
+#Zr{
+    position: absolute;
+    left: 320px;
+    top: 320px;
+    background-color: #880000;
+}
+
+#Hf{
+    position: absolute;
+    left: 320px;
+    top: 400px;
+    background-color: #880000;
+}
+#Rf{
+    position: absolute;
+    left: 320px;
+    top: 480px;
+    background-color: #880000;
+}
+#V{
+    position: absolute;
+    left: 400px;
+    top: 240px;
+    background-color: #880000;
+}
+
+#Nb{
+    position: absolute;
+    left: 400px;
+    top: 320px;
+    background-color: #880000;
+}
+#Ta{
+    position: absolute;
+    left: 400px;
+    top: 400px;
+    background-color: #880000;
+}
+#Db{
+    position: absolute;
+    left: 400px;
+    top: 480px;
+    background-color: #880000;
+}
+#Cr{
+    position: absolute;
+    left: 480px;
+    top: 240px;
+    background-color: #880000;
+}
+#Mo{
+    position: absolute;
+    left: 480px;
+    top: 320px;
+    background-color: #880000;
+}
+#W{
+    position: absolute;
+    left: 480px;
+    top: 400px;
+    background-color: #880000;
+}
+#Sg{
+    position: absolute;
+    left: 480px;
+    top: 480px;
+    background-color: #880000;
+}
+#Mn{
+    position: absolute;
+    left: 560px;
+    top: 240px;
+    background-color: #880000;
+}
+#Tc{
+    position: absolute;
+    left: 560px;
+    top: 320px;
+    background-color: #880000;
+}
+#Re{
+    position: absolute;
+    left: 560px;
+    top: 400px;
+    background-color: #880000;
+}
+#Bh{
+    position: absolute;
+    left: 560px;
+    top: 480px;
+    background-color: #880000;
+}
+#Fe{
+    position: absolute;
+    left: 640px;
+    top: 240px;
+    background-color: #880000;
+}
+#Ru{
+    position: absolute;
+    left: 640px;
+    top: 320px;
+    background-color: #880000;
+}
+#Os{
+    position: absolute;
+    left: 640px;
+    top: 400px;
+    background-color: #880000;
+}
+#Hs{
+    position: absolute;
+    left: 640px;
+    top: 480px;
+    background-color: #880000;
+}
+#Co{
+    position: absolute;
+    left: 720px;
+    top: 240px;
+    background-color: #880000;
+}
+#Rh{
+    position: absolute;
+    left: 720px;
+    top: 320px;
+    background-color: #880000;
+}
+#Ir{
+    position: absolute;
+    left: 720px;
+    top: 400px;
+    background-color: #880000;
+}
+#Mt{
+    position: absolute;
+    left: 720px;
+    top: 480px;
+    background-color: #880000;
+}
+#Ni{
+    position: absolute;
+    left: 800px;
+    top: 240px;
+    background-color: #880000;
+}
+#Pd{
+    position: absolute;
+    left: 800px;
+    top: 320px;
+    background-color: #880000;
+}
+
+#Pt{
+    position: absolute;
+    left: 800px;
+    top: 400px;
+    background-color: #880000;
+}
+
+#Ds{
+    position: absolute;
+    left: 800px;
+    top: 480px;
+    background-color: #880000;
+}
+#Cu{
+    position: absolute;
+    left: 880px;
+    top: 240px;
+    background-color: #880000;
+}
+#Ag{
+    position: absolute;
+    left: 880px;
+    top: 320px;
+    background-color: #880000;
+}
+#Au{
+    position: absolute;
+    left: 880px;
+    top: 400px;
+    background-color: #880000;
+}
+#Rg{
+    position: absolute;
+    left: 880px;
+    top: 480px;
+    background-color: #880000;
+}
+#Zn{
+    position: absolute;
+    left: 960px;
+    top: 240px;
+    background-color: #880000;
+}
+#Cd{
+    position: absolute;
+    left: 960px;
+    top: 320px;
+    background-color: #880000; 
+}
+#Hg{
+    position: absolute;
+    left: 960px;
+    top: 400px;
+    background-color: #880000;
+}
+#Cn{
+    position: absolute;
+    left: 960px;
+    top: 480px;
+    background-color: #880000;
+}
+#B{
+    position: absolute;
+    left: 1040px;
+    top: 80px;
+    background-color: #884400;
+}
+#Al{
+    position: absolute;
+    left: 1040px;
+    top: 160px;
+    background-color: #dd22aa;
+}
+#Ga{position: absolute;
+    left: 1040px;
+    top: 240px;
+    background-color: #dd22aa;
 
 }
-.column2{
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    display: flex;
-    border-radius: 8px;
-    position: relative;
-    top: 112px;
-    left: -360px;
+#In{
+    position: absolute;
+    left: 1040px;
+    top: 320px;
+    background-color: #dd22aa;
 }
-.numbers{
-    text-align: center;
+#Tl{
+    position: absolute;
+    left: 1040px;
+    top: 400px;
+    background-color: #dd22aa;
 }
-.column2end{
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    display: flex;
-    border-radius: 8px;
-    position: relative;
-
+#Nh{
+    position: absolute;
+    left: 1040px;
+    top: 480px;
+    background-color: #dd22aa;
+}
+#C{
+    position: absolute;
+    left: 1120px;
+    top: 80px;
+    background-color: #002200;
+}
+#Si{
+    position: absolute;
+    left: 1120px;
+    top: 160px;
+    background-color: #884400;
+}
+#Ge{
+    position: absolute;
+    left: 1120px;
+    top: 240px;
+    background-color: #884400;
+}
+#Sn{
+    position: absolute;
+    left: 1120px;
+    top: 320px;
+    background-color: #dd22aa;
+}
+#Pb{
+    position: absolute;
+    left: 1120px;
+    top: 400px;
+    background-color: #dd22aa;
+}
+#Fl{
+    position: absolute;
+    left: 1120px;
+    top: 480px;
+    background-color: #dd22aa;
+}
+#N{
+    position: absolute;
+    left: 1200px;
+    top: 80px;
+    background-color: #002200;
+}
+#P{
+    position: absolute;
+    left: 1200px;
+    top: 160px;
+    background-color: #002200;
+}
+#As{
+    position: absolute;
+    left: 1200px;
+    top: 240px;
+    background-color: #884400;
+}
+#Sb{
+    position: absolute;
+    left: 1200px;
+    top: 320px;
+    background-color: #884400;
+}
+#Bi{
+    position: absolute;
+    left: 1200px;
+    top: 400px;
+    background-color: #dd22aa;
+}
+#Mc{
+    position: absolute;
+    left: 1200px;
+    top: 480px;
+    background-color: #dd22aa;
+}
+#O{
+    position: absolute;
+    left: 1280px;
+    top: 80px;
+    background-color: #002200;
+}
+#S{
+    position: absolute;
+    left: 1280px;
+    top: 160px;
+    background-color: #002200;
+}
+#Se{
+    position: absolute;
+    left: 1280px;
+    top: 240px;
+    background-color: #002200;
+}
+#Te{
+    position: absolute;
+    left: 1280px;
+    top: 320px;
+    background-color: #884400;
+}
+#Po{
+    position: absolute;
+    left: 1280px;
+    top: 400px;
+    background-color: #884400;
+}
+#Lv{
+    position: absolute;
+    left: 1280px;
+    top: 480px;
+    background-color: #dd22aa;
+}
+#F{
+    position: absolute;
+    left: 1360px;
+    top: 80px;
+    background-color: #226688;
+}
+#Cl{
+    position: absolute;
+    left: 1360px;
+    top: 160px;
+    background-color: #226688;
+}
+#Br{
+    position: absolute;
+    left: 1360px;
+    top: 240px;
+    background-color: #226688;
+}
+#I{
+    position: absolute;
+    left: 1360px;
+    top: 320px;
+    background-color: #226688;
+}
+#At{
+    position: absolute;
+    left: 1360px;
+    top: 400px;
+    background-color: #226688;
+}
+#Ts{
+    position: absolute;
+    left: 1360px;
+    top: 480px;
+    background-color: #226688;
+}
+#He{
+    position: absolute;
+    left: 1440px;
+    background-color: #44aa00;
+}
+#Ne{
+    position: absolute;
+    left: 1440px;
+    top: 80px;
+    background-color: #44aa00;
+}
+#Ar{
+    position: absolute;
+    left: 1440px;
+    top: 160px;
+    background-color: #44aa00;
+}
+#Kr{
+    position: absolute;
+    left: 1440px;
+    top: 240px;
+    background-color: #44aa00;
+}
+#Xe{
+    position: absolute;
+    left: 1440px;
+    top: 320px;
+    background-color: #44aa00;
+}
+#Rn{
+    position: absolute;
+    left: 1440px;
+    top: 400px;
+    background-color: #44aa00;
+}
+#Og{
+    position: absolute;
+    left: 1440px;
+    top: 480px;
+    background-color: #44aa00;
 }
